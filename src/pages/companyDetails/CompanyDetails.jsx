@@ -29,7 +29,7 @@ function CompanyDetails() {
             <SimpleLink to={'/companies'} title={"Geri"} />
             <div className='w-full'>
                 <h2 className='text-start font-bold text-blue-500'>Digər Şirkətlər</h2>
-                <div className='grid grid-cols-3 gap-5 mt-5'>
+                <div className='grid grid-cols-1 md:grid-cols-3 gap-5 mt-5'>
                     {
                         companies.slice(0,3).map((company)=> <CompanyCard key={company.id} {...company}/>)
                     }
