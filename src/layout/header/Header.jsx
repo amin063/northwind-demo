@@ -23,7 +23,7 @@ function Header() {
       className={`fixed z-50 w-full flex items-center justify-between px-10 text-blue-300 p-3 
       ${isBg ? 'bg-black transition duration-500 ' : 'bg-transparent'}`}>
       <Link className='text-2xl font-bold'>Northwind</Link>
-      <IoMenu className='sm:hidden' onClick={() => dis(showMenu(true))} />
+      <IoMenu className='text-2xl sm:hidden' onClick={() => dis(showMenu(true))} />
       <ul className='gap-5 hidden sm:flex'>
         <Link to={'/'} className='hover:text-blue-600'>Ev</Link>
         <Link to={'/companies'} className='hover:text-blue-600'>Şirkətlər</Link>
