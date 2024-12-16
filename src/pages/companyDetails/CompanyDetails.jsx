@@ -12,7 +12,7 @@ function CompanyDetails() {
 
     useEffect(() => {
         companyServices.getCompany(id).then((data) => setCompany(data))
-    }, [])
+    }, [id])
 
     useEffect(() => {
         companyServices.getCompanies().then((data) => setCompanies(data))
